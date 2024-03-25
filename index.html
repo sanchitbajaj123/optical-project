@@ -21,11 +21,120 @@
             text-decoration: underline !important; /* Underline on hover */
             color: white !important; /* Hover text color */
         }
+
+        /* Adjust Carousel Image Styles */
+        .carousel-item img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        
+        .carousel-container {
+          
+          width: 100%;
+          height: 800px;
+          position: relative;
+          overflow: hidden;
+
+      }
+      .optical-delights-heading {
+        font-family: 'Pacifico', cursive; /* Choose a fancy and attractive font */
+        font-size: 60px; /* Adjust font size as needed */
+        color: black; /* Set the default color */
+        margin-bottom: 30px; /* Add spacing below the heading */
+        text-transform: uppercase; /* Convert text to uppercase */
+        transition: color 0.3s; /* Smooth color transition on hover */
+        margin: auto; /* Center the heading horizontally */
+        margin-bottom: 50px; /* Add margin at the bottom */
+        
+    }   
+        .optical-delights {
+          background-color: white; /* Set background color */
+          padding: 40px 0; /* Add padding */
+          width: 90%; /* Set width */
+          margin: 0 auto; /* Center horizontally */
+      }
+
+  
+      .optical-delights .product-card {
+          border-radius: 10px;
+          overflow: hidden;
+          margin-bottom: 30px;
+          transition: box-shadow 0.3s ease; /* Add transition effect */
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Default box shadow */
+      }
+  
+      .optical-delights .product-card img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s ease; /* Add transition effect */
+      }
+  
+      .optical-delights .product-card:hover {
+         
+          box-shadow: 0px 0px 30px #f35525;
+      }
+  
+      .optical-delights .product-card:hover img {
+          transform: scale(1.05); /* Increase image size on hover */
+      }
+  
+      .optical-delights .product-card .btn {
+          border-radius: 0;
+          background-color: #f35525; /* Button background color */
+          color: white; /* Button text color */
+          border: none; /* Remove button border */
+          transition: background-color 0.3s ease; /* Add transition effect */
+      }
+  
+      .optical-delights .product-card .btn:hover {
+          background-color: #d13e05; /* Button background color on hover */
+      }
+      .reviews {
+        background-color: white; /* Set background color */
+        padding: 40px 0; /* Add padding */
+        border-radius: 10px; /* Add border radius */
+    }
+
+    .reviews-heading {
+        font-family: 'Pacifico', cursive; /* Choose a fancy font */
+        font-size: 40px; /* Adjust font size */
+        color: #333; /* Set text color */
+        margin-bottom: 30px; /* Add margin */
+    }
+
+    .review-card {
+      background-color: #f9f9f9; /* Set card background color */
+      padding: 20px; /* Add padding */
+      border-radius: 10px; /* Add border radius */
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effect */
+  }
+  
+  .review-card:hover {
+      transform: translateY(-5px); /* Move the card slightly upwards on hover */
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+  }
+
+    .review-card h4 {
+        margin-bottom: 10px; /* Add margin below username */
+    }
+
+    .review-card p {
+        margin-bottom: 0; /* Remove default margin for paragraph */
+    }
+      
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Image</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -47,30 +156,188 @@
         </div>
     </nav>  
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="images/img1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/img2.jpeg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/img3.jpg" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/img4.jpg" alt="Third slide">
-          </div>
-        </div>
-      </div>
 
+        <div id="carouselExampleSlidesOnly" class="carousel slide" >
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+            <div class="carousel-inner carousel-container">
+              <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8109.jpg?t=st=1711395380~exp=1711398980~hmac=5f7a5771c51934eedf7ed1e372019395a03af0cbf838d0ecfac586a4b041363d&w=996" alt="Third slide">
+            </div>
+                <div class="carousel-item">
+
+                    <img class="d-block w-100 img-fluid" src="https://img.freepik.com/free-photo/stunning-sensual-woman-portrait-wearing-silver-sunglasses_291049-1416.jpg"
+                     alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid" src="https://img.freepik.com/free-photo/medium-shot-trendy-woman-with-sunglasses-copy-space_23-2148321495.jpg?t=st=1711395365~exp=1711398965~hmac=fa210cb63207b57d1c44e55d0f72f9d00686d74414127e0d731178fe4a533263&w=996
+                    " alt="Second slide">
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100 img-fluid" src="https://img.freepik.com/free-photo/young-blond-woman-red-top-sunglasses-orange-background_23-2148135776.jpg?t=st=1711395622~exp=1711399222~hmac=970e66556e41a32d9f5252336a98a2546302e557a8bbffcd8ca01881eab21d2a&w=1380" alt="Fourth slide">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-4 optical-delights">
+          <h2 class="text-center mb-4 optical-delights-heading">Trendy Optical Delights</h2>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="product-card">
+                      <img src="https://via.placeholder.com/300" alt="Product 1">
+                      <div class="text-center p-3">
+                          <button class="btn btn-primary btn-block">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="product-card">
+                      <img src="https://via.placeholder.com/300" alt="Product 2">
+                      <div class="text-center p-3">
+                          <button class="btn btn-primary btn-block">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="product-card">
+                      <img src="https://via.placeholder.com/300" alt="Product 3">
+                      <div class="text-center p-3">
+                          <button class="btn btn-primary btn-block">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="product-card">
+                      <img src="https://via.placeholder.com/300" alt="Product 4">
+                      <div class="text-center p-3">
+                          <button class="btn btn-primary btn-block">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container mt-4 reviews">
+        <h2 class="text-center mb-4 reviews-heading">Customer Reviews</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="user-image text-center"> <!-- Added text-center class here -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhtFJc9v3hEBfhJiOhYMS_60ieEbiOjPJyxl8F2dIBw&s" alt="User 1" class="rounded-circle">
+                    </div>
+                    <h4 class="text-center">John Doe</h4>
+                    <p class="text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id mauris quis libero tristique aliquet."</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="user-image text-center"> <!-- Added text-center class here -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhtFJc9v3hEBfhJiOhYMS_60ieEbiOjPJyxl8F2dIBw&s" alt="User 2" class="rounded-circle">
+                    </div>
+                    <h4 class="text-center">Jane Smith</h4>
+                    <p class="text-center">"Vestibulum ac nisi scelerisque, sollicitudin ipsum eget, pellentesque tortor. Sed in ex quis justo pharetra consectetur."</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="user-image text-center"> <!-- Added text-center class here -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhtFJc9v3hEBfhJiOhYMS_60ieEbiOjPJyxl8F2dIBw&s" alt="User 3" class="rounded-circle">
+                    </div>
+                    <h4 class="text-center">Alice Johnson</h4>
+                    <p class="text-center">"Nulla facilisi. Vivamus finibus pulvinar est, id suscipit dui condimentum et. Ut at urna eget nisi euismod dignissim."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-4 faq">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+          <div class="card">
+              <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Question 1: What is Lorem Ipsum?
+                      </button>
+                  </h5>
+              </div>
+  
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                  <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus odio id nibh facilisis, id consectetur magna consectetur.
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Question 2: Why do we use it?
+                      </button>
+                  </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                  <div class="card-body">
+                      Donec volutpat condimentum ante id placerat. Aliquam erat volutpat. Integer nec libero ut elit varius rutrum. Nulla facilisi.
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Question 3: Where can I get some?
+                      </button>
+                  </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                  <div class="card-body">
+                      Phasellus at nunc ac diam convallis dictum nec eu augue. Integer nec libero ut elit varius rutrum. Nulla facilisi.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer class="footer mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-right">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+      
+
+    <!-- Bootstrap and jQuery Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
-        $('.carousel').carousel({
-            interval: 2000 // Change slide every 2 seconds
-        });
+      $('#carouselExampleSlidesOnly').on('slid.bs.carousel', function () {
+        var $carousel = $(this);
+        if ($carousel.find('.carousel-item:last').hasClass('active')) {
+            // Last slide reached, reset to first slide
+            $carousel.carousel('pause').carousel(0);
+        }
+    });
+    
+    // Initialize the carousel with the desired interval
+    $('#carouselExampleSlidesOnly').carousel({
+        interval: 1000 // Change slide every 2 seconds
+    });
     </script>
 </body>
 </html>
