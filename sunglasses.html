@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNGLASSES</title>
+<link rel="stylesheet" href="sunglasses.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sunglasses</h1>
+        <div class="product" id="product1">
+            <img src="https://m.media-amazon.com/images/I/31vR9e5S9bL.jpg" alt="Product 1">
+            <span> Classic Black</span>
+            <span> Rs. 500</span>
+            <button class="buy-now" onclick="add()">Add to cart</button>
+            <button class="buy-now" onclick="buyProduct('product1')">Buy Now</button>
+          
+        </div>
+        <div class="product" id="product2">
+            <img src="https://uniquekraft.com/cdn/shop/files/20231114-232805_0003_840x.png?v=1703168203" alt="Product 2">
+            <span> Elegant Gold</span>
+            <span> Rs. 750</span>
+            <button class="buy-now" onclick="add()">Add to cart</button>
+            <button class="buy-now" onclick="buyProduct('product2')">Buy Now</button>
+        </div>
+        <div class="product" id="product3">
+            <img src="https://www.colosseinglasses.com/cdn/shop/products/product-image-524594496_540x.jpg?v=1643187318" alt="Product 3">
+            <span> Retro Red</span>
+            <span> Rs. 900</span>
+            <button class="buy-now" onclick="add()">Add to cart</button>
+            <button class="buy-now" onclick="buyProduct('product3')">Buy Now</button>
+        </div>
+        <div class="product" id="product4">
+            <img src="https://www.colosseinglasses.com/cdn/shop/products/colossein_sunglasses_7_540x.jpg?v=1644393492" alt="Product 4">
+            <span> Vintage Blue</span>
+            <span> Rs. 1200</span>
+            <button class="buy-now" onclick="add()">Add to cart</button>
+            <button class="buy-now" onclick="buyProduct('product4')">Buy Now</button>
+        </div>
+        <div id="buy-message" >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAilBMVEX///8AvQEAvQAAugAAuAD//f8AtgD9/vwAtAD9//vK7sr6+/vz/PX2+vX//Pzj9+fM8NLa8tqH2I0dwCFcy1+r4qt71386wz2T3ZGX3Zui4aK667xQyE/h9t+g4Z4rwSnE68Jr0G5Ex0kwwTPW8tNlzmeP3ojt+uxbzlpo1Wlw03eE2YfG77+05bKkwQHwAAAEHklEQVR4nO2abXeiPBCGM5kAiriWgspqq7jo4rrb///3NuALkIDdc54nTD/MxYeeY3NOp3dm7swEhWAYhmEYhmEYhmEYhmEYhukhWrzE0ZQ6ig7xa+L7PqbLuQioY7mxWCUKEKREXMfUwVQEoswQUUKNVN+pA6qINolCrVL1aKWS0KOOyBPbtQ83lQAQ396pQxLi/U2LhLVKdUy7gFynaQb4UAmkvw+pIxIiL+oEvz94oHep8hVbMgFMNlPyoHKARiWJUHyBrVt1ZSL3TH2MhMXdma4PniLamDRLVNiWyV/NaQP6Juapr0sNmqpD+pMl/qHa2QTgb2bUMX10M1zH9CE84m4lU/d9u/3wP4hPFi9KFXR0kkrrROuZZaoaJ6hNk1wnERdKdqwA1VIQd7/HdccxtU5qOSXWKdRnXVun2p+I6y5MWl1KrRT+DoitIJSGPSmV0kakGxVLJ3UuifPpxdRJ51dJG5KdT/oUpu7pYjB1gsmSOqa1rdOBOKbZXpk6qXXk3gym5XDnOE+VtCrv6DykeHdYn7b99R2IkwITtXFnBtUORPGumij10fqzf9HGRzOj8BK4azU9ccxS1A2SrBujvG9JDmgJlbhxqEqj8rhKUDX9kdTOY+3KojtJXdcN7PR/J8zqPqQzTxalUVLe/GwZFKjDzMXmLcJfVRaBoQFgatSgd7FWSUycjJ2bQqGUlgL6r+OmuzK3DEr3UE6sPEfoCej2F1/aK+PETnI8uYipmpHMQ+MxCMC5vTfnugoMO1g4CSpH+/9vhPjdVOB3Ze+xucH/F/PLxCrzx8iE+LjRWQC2Z86rToWzM+9VDWqF6nyrwGBtL6oM1pVHeTvftINGknt1LavN6yol8eTuxmcmNs8qsGq9vbjneEEVu+zKg60+ZQeUwqxa0cznrYxy3dn9kUNFWFf91pg7r79xYwcNwdHSqiVItEbrY4mZ63HYq6bwfq0Q4sxu7AAddSxdQoBepSScE2l/7GcjxBSI3Jowb7nTU3kA+3Eupb0/xtXOoNFXGeWwL++yNS4Lh3HURvWyQ7vMepUa9SVs1p9WFslizCuWA8LnSkkco/Qa5m9P2qtHRuHIb4bLAj9VSo18n6Ht6tO0kjD2ZVRwb52GlcLD6G/OPPHrk7RSH+Lb2FHppuCpUpiMHlFF6D/TCnckQT31UNy7bu4GiH7A0PahXFG96zgOSiUnR6IXVYG4KGuSuCkFJBHVlOuhlKK8MV9al+XXJyH9QlTPnF4NoOP2ByZh370HAvE3fQ72YIXg/hr/Kd5xYumEMfVLYnFqj6d6rsdL6ezq55958VtehUkazoLxuwOLw1UqbQ6qWGormH6BmERZ33ogJud8/lW+ASxEfFK+v8+IS84kKMP3iDy5GYZhGIZhGIZhGIZhGIYh5C9bGCtLyG6NgAAAAABJRU5ErkJggg=="
+            width="80" height="40" alt="Success"> BUYED SUCCESSFULLY!
+        </div>
+        <div id="add-message" >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAilBMVEX///8AvQEAvQAAugAAuAD//f8AtgD9/vwAtAD9//vK7sr6+/vz/PX2+vX//Pzj9+fM8NLa8tqH2I0dwCFcy1+r4qt71386wz2T3ZGX3Zui4aK667xQyE/h9t+g4Z4rwSnE68Jr0G5Ex0kwwTPW8tNlzmeP3ojt+uxbzlpo1Wlw03eE2YfG77+05bKkwQHwAAAEHklEQVR4nO2abXeiPBCGM5kAiriWgspqq7jo4rrb///3NuALkIDdc54nTD/MxYeeY3NOp3dm7swEhWAYhmEYhmEYhmEYhmEYhukhWrzE0ZQ6ig7xa+L7PqbLuQioY7mxWCUKEKREXMfUwVQEoswQUUKNVN+pA6qINolCrVL1aKWS0KOOyBPbtQ83lQAQ396pQxLi/U2LhLVKdUy7gFynaQb4UAmkvw+pIxIiL+oEvz94oHep8hVbMgFMNlPyoHKARiWJUHyBrVt1ZSL3TH2MhMXdma4PniLamDRLVNiWyV/NaQP6Juapr0sNmqpD+pMl/qHa2QTgb2bUMX10M1zH9CE84m4lU/d9u/3wP4hPFi9KFXR0kkrrROuZZaoaJ6hNk1wnERdKdqwA1VIQd7/HdccxtU5qOSXWKdRnXVun2p+I6y5MWl1KrRT+DoitIJSGPSmV0kakGxVLJ3UuifPpxdRJ51dJG5KdT/oUpu7pYjB1gsmSOqa1rdOBOKbZXpk6qXXk3gym5XDnOE+VtCrv6DykeHdYn7b99R2IkwITtXFnBtUORPGumij10fqzf9HGRzOj8BK4azU9ccxS1A2SrBujvG9JDmgJlbhxqEqj8rhKUDX9kdTOY+3KojtJXdcN7PR/J8zqPqQzTxalUVLe/GwZFKjDzMXmLcJfVRaBoQFgatSgd7FWSUycjJ2bQqGUlgL6r+OmuzK3DEr3UE6sPEfoCej2F1/aK+PETnI8uYipmpHMQ+MxCMC5vTfnugoMO1g4CSpH+/9vhPjdVOB3Ze+xucH/F/PLxCrzx8iE+LjRWQC2Z86rToWzM+9VDWqF6nyrwGBtL6oM1pVHeTvftINGknt1LavN6yol8eTuxmcmNs8qsGq9vbjneEEVu+zKg60+ZQeUwqxa0cznrYxy3dn9kUNFWFf91pg7r79xYwcNwdHSqiVItEbrY4mZ63HYq6bwfq0Q4sxu7AAddSxdQoBepSScE2l/7GcjxBSI3Jowb7nTU3kA+3Eupb0/xtXOoNFXGeWwL++yNS4Lh3HURvWyQ7vMepUa9SVs1p9WFslizCuWA8LnSkkco/Qa5m9P2qtHRuHIb4bLAj9VSo18n6Ht6tO0kjD2ZVRwb52GlcLD6G/OPPHrk7RSH+Lb2FHppuCpUpiMHlFF6D/TCnckQT31UNy7bu4GiH7A0PahXFG96zgOSiUnR6IXVYG4KGuSuCkFJBHVlOuhlKK8MV9al+XXJyH9QlTPnF4NoOP2ByZh370HAvE3fQ72YIXg/hr/Kd5xYumEMfVLYnFqj6d6rsdL6ezq55958VtehUkazoLxuwOLw1UqbQ6qWGormH6BmERZ33ogJud8/lW+ASxEfFK+v8+IS84kKMP3iDy5GYZhGIZhGIZhGIZhGIYh5C9bGCtLyG6NgAAAAABJRU5ErkJggg=="
+            width="80" height="40" alt="Success"> ITEM ADDED TO CART!
+        </div>
+    </div>
+    <footer>
+        <div >
+            <div>
+                <div>
+                    
+                    <p>Copyright © 2024 Misha eye care. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="sunglasses.js"></script>    
+    <
+</body>
+
+</html>
