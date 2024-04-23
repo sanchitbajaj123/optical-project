@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISHA EYE CARE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM8AAACUCAMAAAADFo1ZAAAAgVBMVEX////u7u7t7e0SEhLs7Ozy8vLv7+/w8PD9/f3x8fHz8/P7+/v+/v76+vr8/Pz19fX09PT39/f29vYAAAD5+fktLS0ICAiDg4Ovr69FRUVAQEBPT0/S0tLZ2dmjo6MoKChbW1u4uLggICDj4+NpaWnExMQ3NzeUlJR6enoZGRlycnIPdeAuAAAZaUlEQVR4nOVda2PcKK8es7Yx+O74TdttkzbN9rL7/3/g0fMIsMczk5nctuke54uCjEADCCEJeZfJY6adPB5Q0Qg0o7BsBaqsEXAAegBkAM2lQHkNdCGFeY/CMZdCWwnUAcpRe+dQpW8C2rgOdUCnHIEGceMATWgxQ+0ahfksUOPxJtEzSYJOZ7OIRoeMR502j/3d7Up5Mt/Oc2sBuVmeHoVlD9BmAjmgC0CZQPMArAF2dFKYFQAHoEsWGqAngEpcgNbjRTuikC+yRaItiZex9sRuDADZYokW+yy1yDp9RGt/xyz1lzw1PpfH6y8hj2n4OwIk0wWgoYloi6HZ8UUOrAOovyPqGI5CiUKiB0BZQueAKtbhIE2szRZJki2aVLsnmiNHOuwxiRcJzVnTlpH4ruLIKj8mDnyXxWnTFJg2gR/MKm0S+CnNKlIfMRPLOs4LRXOilrs4j3XasA74aSagizRRMxJfVkGfxYlacxWQHxJniwMnKvmxEXo0Pzo+Z/gxZ/nJX4Cf/hg/YWmllZc1e/zssOp1WWPlmQf4YZOcb86kHm342ZGfuOqDpKg4347xAzpF+oGVH2eO8YPCHRbR7EtrSy7rPrPWZrrIAHFZF0B7rlZADoWtsaGwtYAc1y1AXfUObw6xtqUg6QEFQQI0V/BAkuwGSbKQbfv9ro0k3rPFMra4EJ9QaHd4JxtqeUJNgdBr6ZZAoVsRbbNOoBE1M6KVU4Fa7VaLQnSL6Jq1PQpDr4EGZCeBOu0WSJJTC3TgFCR9Qk/gz5C43Uen/pasXa9G1ptH7T+cVfv7jznYf8yJ/Se7ZP8ZEnq9/6SJypno4yqI+892P602/GRn91Oj/JgL99NutZ9mJ/gx2/3UnN9P7RvhpzjJz/AofsL4GHl0xnhATuebgIGfXEDy4wHlu4gO/OSx9gQo8AO08oPCQfkBcc43oHW+lSxUftAP5QeFOj4JPZOk8hPRspUKFOZb7K/A8sxWN+G2rbnf5rLaaqoC+VS3bafoWdC6189SyN06H7q2VVXA4kWtPUrtMYvomtqFAXGqArk0WOtm7tE40aW02M6xdktNIfeAvLaYak8gSeJOoM5rfwUak/JxuJ9u95/9/dRx/zmtH3S7Pf1gu//s6we7S/ZTolf7qXt4P30V/SChn6kfmMfrB2f4eez4PEp/u2h83GZ8HuCnkqfmui0aAbFujelQSEkxA6/oWiCu+pKFfLGXOo2lIJEi+a3xAN1yrQNdUZCgoWYkSRLnsu4F6gYKEhRyWbN2wxcHQIpuBZxVkIAkiBuHtge2iBdnFu4KeZwf5Sk84F6gAZAfBOpR5AuinYDlSDTwRAPyqD2xSjGh0ApogZ5I0qNQX+wDSc86o2XjY0DHtjck2SLeLElcSRLNF1E48EXUHlVeB/2ATGPoID058PztVV4P/PU4bUr+zLsor1mbA2v1GLPI67QZEL2S13qMYYucdGwx7D9reW0O5LU5Ja+5Cn79fnpaP3jSfvrL+VH9oHw2Pyt9J+gHedRHZb7JX63zLXZ4YDd3Ab3WR8N8gz6q8y3xY/NIfN7TR9N8S+Nj0OJG4USH85U+CqgqF30UxJM+GuebLE0uf12lQ8GVlyBbyPpcoV2E/FBiLbshQhaQvih1FkjqUJAQisRXJFeQL2OLK+JHSVKQsEUbiQdC5El/iaPnUzJd5HEU6qPnU7OcT+VnLjEFmofPp9VyPtWRQ4vNZv8Z4yjorFkN7NHzaWmepR+8DXvIi+g7F9l3zttDXpEfCPAw37AnsEmTtpHCRLWf6DDfgA/zTZ4432Rhqz6a0IPqB/yx0jbCnSnY31A7HTTU/palXbHnHkXJByjwk1okWu1vLNyNuhPLenKz7r8CsdAB6lVzkNWm2zxBFgJNJWHGauaWPS/onku8mGMdEh8W4kpyTCSn/RZXxPliH2sXAwixxYU4dIiZPfeqHwyNPE7VMIHwO8qZQ6COSpEHOpznBBr1PCdQHQ5sTUPNzpQdCvkialelqmEC6nGvBUkdWIH0PGdBUtUw1FbFb0RttliyRZIkmm2PVUDnBQpVs0OLzRvcT7Oz+6mi+7dpP3hlfUf1g4infpD1x/jZ6geJn2rLz2536C9JYurJ9pCtvcqu9FGvrhGUjvR9oMmeNkmAtF5yDzNzRBtFcyulHVPNavSXRDTHeYW2MKxq19kifhdj1fdB6U8LLDeH1CJtteQsn2PtBW0cWuSOnUV/SbOruBwXea0/VKbyupH9R49uu6CZWxRGed0s8rpReV12IMnCHoWDLmuBtvJ6FlAPeY51lpNElNdS2yRxngV53UR53ewUbQDxFMP589jz9pv3L/zG/p/j/hKarpM+GhR3ngoWf0ni56w+2h2Ojzngx4TxEf0gitW1vyTJmcVfUuNMEfWD2CLZXftL6uQcKOpoyS+jH0DdBK06GWDeH2nyp++ALw7Ji8DavU1eBDoyFsdEWUe/hboJWGcSsO0XzwNJkjjb7pPXwxOt/hIU2tQi0Upc/SUq39gtjiz9DxzZiTQ4skAXFFt1RBt1p3Bg0S2dVWw3j+iWskr9JYaijL3GQ05VvrFbLKS/hIU9fxKS5O9E+cYfQtFokbNG+6tzf+svyQ73nwf2062/5NL9dO2vTwvvCeftg/3nzesHL+Iv2fqznsiPefr4ZJfpb7vj+pu6CWBgZEgADZUjPQIwVHbq6Yclkn6AnDZUWvJhLm3pefAVLafwA7CQL9KGGpwMAtHzQMMqHRMGptGGaAuSgwYuwArKwglts8WsicRpWG2JHoGma8HVtJzG/lYq3xC9URZdXXcaagHnpkZvYLl1hcaQCDQxXGTGmxqTAciVsTaDO3TVs3BAoUaOVCDOwBISdwzzQOODRqCgG4ZBIqijUSACVQxGCY5XEJ/2WyS6BDSjbW4Lup+e89c/sP8s+2kWDUdn9QOT9IO0/zzgX9D9Z9lPj9lDnukvecP6wXp83pz+tozPRfxgXXY4AYgoh9eB/HRN1bC6mQUKUkwARVsprHR81F9C6oB0I67lxS6INro0OIXhLyE/oKObN1fwyA6jReUHxBvlJ9UuUofKcb/FEL+Dnis/6i+Z+n4K5sdJIBgdXSFQsF4SjUILaIiFk9pLnZT1WibAFPwl8ma/kHSxndAMW2QzDpCPhZPXN6dVM6HQknhsZ+r1xWFa9bzv1/Zrs9YPzHI+Ncv+o/5t2pAvsl8v29MZ+3UWp/kj4inytX7wZvwlr+Bf+JX8ZE+27xznZ+Wfy2M8RYvC4C/J9dgczJzRX3LcP5dv/XM2hVts4ylCmGGKp1A36G4vYGIbTwGIrtOH/HOyhvrgBhkF9HHVh9U6CDSGlSdgWP/A2yhIFF30cd26ItJxJKmCZOyD+LB4MRJKJEGRbhASH5U42lbZ5CMdx1Wf+quCBHSCbIL1semKXO0LwdRoYNEM/m3gab/2Uhjs1y3ejPaQYJ1wME6q/RpWULpBZWBh+1T7dRPtISCu9hAYSaueXtIqGlZlLsmbfLEHSRo8HIyxOmuAbqI9JKANXrzcHvLbxVsejXepGCNcq6SAdqgnCcQIq74DlZHLmoHDWpsByLqyUD30SAoDPyDZRLQuopEhz+qwQnUSzxJx1uaqr0k8xLvEFs/qO/obdV1HdTafBZJDunTD1yjMVb/uuipX/Vog6squElCDp1FbjtoR7VW/BhoKct4BDZU9nwD24KJgnVz1a3nI+EA0ibNDeNGOIEmlugBJv+WH3osQSg6nhFAq7j/878Tz/RRi+9JFL17+nCT59x1PNfCXkEk9zwV5HQO77fer3+b5pvIaIWe7/ZW37Kf2+/Ufv8kT+HlYP/jd+Vnpo+535SfqB04eS+9FYZ2jiNyNys/pSbtmNxQRvl7/c7YrhxQfT+vqG9wpFlww9H3XUSBzDxDo5iefr3j1759379/f4XmP5y6Bd+++LgxdvWPRLdq9vr7lCz8vYejq55rkB1C8/nJHWmj++us7/vPuYVpXdyKbM0julT1kscd/W36T66+3sol03LTwJoeupvXn7n8rft7DrTzeKD83E2JQbi/i51ZVAe5zuy9X/G3awfvp/rOQv/78vhPC1ftz/JQP6QffltrCzxzMgj6p/VQfDviRQ2TkRw6V/lJ+VE2mvhP5mUEr8lOLftm9LD/H9Dez4aew5YofUR8exQ/1NxP4+TmKrtFHflqhXD+WnyZ6+nO/azb8THKMgerKU84Q9et83ozPhh97OT9onMeYU/xkF/BDf2ODeCRAGrktC6qyeZ7drUTO37ciLEqNNBe02nux8nbvP6/5GfphmG+0zs00DL27PRCCx3ryXgPRqdkt62cYxvuvqP71fSf/yPo5RSvoB03Vqb13JKG9/bT89uFjer7cxfP2xl+/z8+PT3hCxTv+84Pwn+f46Rb7gfJz/ZfS+sLmb28EvrklrQ9fD+r/rY18elA/KNn1CuJcXYDH7Ad7/ISf6eNumqY5V8XvB/5pPz08QJEft/ATaP09jKD1k//8pbS+bKfd9fd8ss6y56fjKfRQQanMU9sF/GjnvsCQ1+cfrrCKfjQ4DZ/lp9qOT0B8RsDkcM+d5+qfHWl9PMJPEU9lB+PDk4b6G3HS0GtwOGmo0MBO21EGmoP1s+GH2+KF/Khpyi3rJ/LjL+PH4tdgf9VSj17y/tzoMcH0Ki1UBwaJTIQmXnbDMzASA9CevH46P7dO78+B5FP4ua8Rd0J9bY5dc1E/2I8PORbPt8SHtHf/u7qWZ8OP933+pyCuwI+oDJ+ut28tnZEn7qeMBRN+0rsy3wbQSvz4Yt7nh9W/31N1oZFE958n2kOEn69bISr8uMJNwg/lQSX/zJ8Oddf4Np+9/fTj8i7GR6ZD4kdojXvyQDXVr8rPRfaQh+07hb2X59PN51UbX1WsfrvBc0vh/RfhbweS6Y8/vt3fiyy+X/l/+nuSDBux7hec1NdfD+T11bsbSPJP9iQ/esX66P3tEK8cz+S1+lgBlm7Nzx+r/bTQ/fRji432/q8Dfq5vRJiWNsUr5+H2964MysB6YK8PDyg/9M6q2nfM5v42PZW8xEF7AsM3PUHPuyIU3QzpVBtSQvfj54M1utZHrz7O8HbcHOHn07RqUYmrb/SMchPH536YEG3K/k6xQ9nA+yXb8/bF8XzVM/gZjsbzlc3dhfy0OjTZqXi+p/gXjvPTp/OP8ONxmDng5xr8HIuneBw/L32/pBoPpJyOT5EFfkZsSXvjE87Qe/ws/hLwc8kT+DkeT6GWbyjchQmGcbWb0/JdWd2ZpNDrfSag1V8y/3iH58PC0PUfP3B4vv2H/HznMf3Haue4/vMnavy8cRkN+eE+k0A9DfnNp3cXPD/f3zMYekjxym2eLPU70cmxe8EJ0QOEV6RIhfK/PPRrFD5CnoV+aviDvDv8/ddSam3QuPonR7TkDhfa+tjOAvlBf+JzT937pTb6y/4ULAz7j57ndk+J9z9jsNib+X/dOI0frTbx/i45wkK+DRMdYUNyhNWLI8yqf2e3F+//TH9JjKd4HD/Fm71fkj+bn1+Rb0P1g+T1PZJv491FMkkf8rPb7d1nGtN9pm2+je19piy74D6TnP6mHqZRWwD0pSjdWS/QQGhAoaJR6GmJZGHmWKf78ecHPn/iOQkR/P7zxotoQ4sOJD0gkLQOxHuQLH0kXhaxbce2ebBwRJeoYwGBjpJUtP4Sq3iKI/tPyBewiaegV1FGTs5DcDHNDn5ZgDX9tjxdwafs5oqnRTh9Oas4ozVfwP5+SuPl4q9XL9sqnkLd33vhCbr/UOt/ufuay/0FF++5ZeqoXN1fIPpF4yle9X5J85bul6T7zmFhzgwLP5IPJd13PhLfS0mxvV+yj17F7xzkQ8H90yP5uC6N30n5KZg8Z2CiCFlitpgFmghNyFwByGkeCc10E9HlCLQX0KH2POBF5LBoNXmO1sabHoUDSaIO0+i4HoQYIO7aiLZ4cSwievYkCTTT2WRzJFn2qW0SR5y6cyDe0l/SOo16xQrmeY6FPM/Rla3oOqJLrHBNidEL1Fg95EnZxNMV6mhY6wCSIaxV0CGQlnYjjZSFr4a1WRjCWoWkiWhNFUbbzcoKqlZbkCQaVqcQSMsx+i/lc7iAn6fFj761+JC3ND7bfCgP8FPz1oV6ERBBrflfECJNCNcqOk1Yh/hrhoVnDJEOgeh1XYX1I5Bml9NbFxGt68c0+8S5AvT6SVg/dciQA+JVWD8ChfWD6G3SmUCyjP1VdM7462yxhwxYUJ5BIjXWrYaFV7T3Iiy8imErXHlEc922XqPGEZfCsHAuaxPRjPvOBpCcGKGCZd1mNH2AUJmFQJlKgzta6hmAgKZXtyR6AskgSECSgTIMJdcoHBP72528v3B0/zmTj+twPzWH++nj8kEe7j9Z9rbzcT0h3vI590tOjs82X+el/Gzvl7ywvsMrEgNCszUIgfc1OJt5GYSRZgldmobojAtE0Axjw+0U3tQQSc77JWVAV1q7Y2Yehn3xhgjC4XCBpNH1A+K9XgMBcazYTC+QRHTFFKB6v2RBDwyCYx0Q16xAGi8GHcNqphtVVmAa1TtsvF8PtNdEONRGcJ+dyQFxx50X7URZSWi9Kx/rhJSAvAzP+3NjQtOi6Zc6eiUPhYT0yj67pnl9Yh29SYcWqY8p8Z4gx+hZ59PD+yVUSl8gH+SYVn2ROvR6+TZ+p/jR3/4+7RH7W7Wyv+Vr+1t+kG9jifvOkAhC79PmZpVvI+a7jfe3NcVXsr/lR+1vId8ts0zs1P6WP2R/2+Tj0iBt+h8IakYt4lM+Ljo3GLntYm4tRI3HQrufjyuEhU+xNjNxaJx6atEpcQ0qD7m1FB1ulaR8XEpcg8rZNRf7uxSOK0tksF/H35G/RLXKx5V+Cc3HpfaQGNDPhBpmlT+RW4RNhtUxGVZpdw32ELVfc9qYcK2/TQm3Knp1bZo1uQYtm3gxn+Me9h9jXtAe8ovyW77RfBtPsO88In+I2/LzoL7TJX3nuH3Hbvipj/BzYH9L/DzufnCYb4xH4OUQmj7pfyhoatRrIsRPsVAhG9Fqk1R3CtEDr4lEqC8TSX3RR5KrFvWSyT5aiZNkiRZplrV9JE50qJP6axd/iYrUo/I6+LejzKhPymtOG8rrkI/rpLwGpPI6xVPkIR/XIq/zPXkdrjfkx+V1vpbXpP5fvH/6X9IPhgvycQV99MA/F7I+Lvm4oj5qTuTj2kX0Kn5nqx9s8nEVqUMP5ONS/xy9F8yB6dTr4AWi94LQECDB018CoKC/xAq6oPfCMTsWnRu8RQq05vwjSb5H54Z3ERqU5NI2W7SxRRJX18jSNkiGdhwgpy360HPPTJ4h/g2nK84q3r/X+Dce2CivmRBA4994uqK81vOcCbU7PRXoeS6ig7eF+QLwItOitjpReZ6jgQAkddowayrltZ7nuAU04Q5xpuc5+limiDZ6/sxjf6vXyufw2Hwb2WP20zetH/wL+bi2/Dycj2vlz7p8fLbxOy+WD4UixzPbvmHKOeZ/oXBixhmqwMxXoznlmD2GwkkNq8xUjEKNDmC+Ggon5uiJxGtuqkxno1mHYRplQioaVmvq9szMM2bcvPEiW+QXBXq9oku7ayROdO5Si0bz1VBeP/X7JXnQD/J/4/slndqaUfjC3y/5T+oHz7eHvKJ+cNJeteRD6S/Mh3L2+yVLPhS9L3PSXrXJx3X2+yWEmN+fboICifeZkEY9lbSHjuo6hRcBENPZWBTWTC4zINM/YzIdILoJrPo5E5qG1SyhTRvR9LG2LFTHK+8H44sCdaaOiVibXt2Qr2a/RQ21rOmX5cWo4A/GJ5Ss+oPnVi2RvUCjmjmJjl8+aSfWmYBWyynDwmnmRG1NEzbhGykuopW4G1EnEp+jP1igQT/kIuhgOQWdIqGDP1ggJanfeVn6W4ba83z0+yWn8208kA8y+esP/CUJvf1+ycvm2/j/oR+8UHzI6Xxcr5xvY9kWfdoWGXqg+Ta4SYVAwbhfaU4s9K1ZIs3p3bRpW4z5NmLtOW2LjfpYOd9Si4xM0GMX68z7HZpT27pPh/kGJQB1GOUe7tPql4+oOuC+hmbxb/m1JGoWAujHEniJg4bhDCsvqC0CqYkPn13D10/kNK9ZRmmSEJKtU7UFgkQVJSxrpgFhZtIiD7Vn/fYDiGtuDAiSmi2WvNsCyPQgmfEMKFBUlKSMipLaD5rX+H5J2k9Pfr8kfw1/PQfx1+g7b8Zf8u/rb4/Mx1WokQspsziHmf5KJ7tADdEehaNavvEmX0TCrZjfhfm4DPO7VI0eNHokyjr4fgmI83CCJH0MC9d8XCG/C5N9EQ1Iv19SMxeYCd8vifld0vdLmElM7SEMxVZzZB+jyAkx0Juh470aTQHaFL7NiPBB0YQE7BmN7h0Cz30k6TVEPREP0egDrKsCescXUwQ7sSuSGjAOPE2hrO1RGPqbuqZB8Zvvl6zzIwX9wDzj+yU2GbqO50cyZv29qc33S3bb75dwafwm3y95gn/hbebjesXvl6z0URPyV6y/X0KaYb6d0kdTWPiS/+0R3y9JAcnL90u2+ujm+yWH+d/0yx8qFSJoCXFZF/top6IAlSzKXIQ8IV2Y/OxAuPMRQUuoSCT13koRmglts0W3R1zbVpJL2xQkdp+4kiRPB+fT7f6TzqcaT3H6vM2J+lLxFFMaheV8uo2nWH3/lPEU/wf8M+VOTYEiCQAAAABJRU5ErkJggg==" alt="" style="max-width: 60px; height: auto;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="messageBox" class="msghidden">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAilBMVEX///8AvQEAvQAAugAAuAD//f8AtgD9/vwAtAD9//vK7sr6+/vz/PX2+vX//Pzj9+fM8NLa8tqH2I0dwCFcy1+r4qt71386wz2T3ZGX3Zui4aK667xQyE/h9t+g4Z4rwSnE68Jr0G5Ex0kwwTPW8tNlzmeP3ojt+uxbzlpo1Wlw03eE2YfG77+05bKkwQHwAAAEHklEQVR4nO2abXeiPBCGM5kAiriWgspqq7jo4rrb///3NuALkIDdc54nTD/MxYeeY3NOp3dm7swEhWAYhmEYhmEYhmEYhmEYhukhWrzE0ZQ6ig7xa+L7PqbLuQioY7mxWCUKEKREXMfUwVQEoswQUUKNVN+pA6qINolCrVL1aKWS0KOOyBPbtQ83lQAQ396pQxLi/U2LhLVKdUy7gFynaQb4UAmkvw+pIxIiL+oEvz94oHep8hVbMgFMNlPyoHKARiWJUHyBrVt1ZSL3TH2MhMXdma4PniLamDRLVNiWyV/NaQP6Juapr0sNmqpD+pMl/qHa2QTgb2bUMX10M1zH9CE84m4lU/d9u/3wP4hPFi9KFXR0kkrrROuZZaoaJ6hNk1wnERdKdqwA1VIQd7/HdccxtU5qOSXWKdRnXVun2p+I6y5MWl1KrRT+DoitIJSGPSmV0kakGxVLJ3UuifPpxdRJ51dJG5KdT/oUpu7pYjB1gsmSOqa1rdOBOKbZXpk6qXXk3gym5XDnOE+VtCrv6DykeHdYn7b99R2IkwITtXFnBtUORPGumij10fqzf9HGRzOj8BK4azU9ccxS1A2SrBujvG9JDmgJlbhxqEqj8rhKUDX9kdTOY+3KojtJXdcN7PR/J8zqPqQzTxalUVLe/GwZFKjDzMXmLcJfVRaBoQFgatSgd7FWSUycjJ2bQqGUlgL6r+OmuzK3DEr3UE6sPEfoCej2F1/aK+PETnI8uYipmpHMQ+MxCMC5vTfnugoMO1g4CSpH+/9vhPjdVOB3Ze+xucH/F/PLxCrzx8iE+LjRWQC2Z86rToWzM+9VDWqF6nyrwGBtL6oM1pVHeTvftINGknt1LavN6yol8eTuxmcmNs8qsGq9vbjneEEVu+zKg60+ZQeUwqxa0cznrYxy3dn9kUNFWFf91pg7r79xYwcNwdHSqiVItEbrY4mZ63HYq6bwfq0Q4sxu7AAddSxdQoBepSScE2l/7GcjxBSI3Jowb7nTU3kA+3Eupb0/xtXOoNFXGeWwL++yNS4Lh3HURvWyQ7vMepUa9SVs1p9WFslizCuWA8LnSkkco/Qa5m9P2qtHRuHIb4bLAj9VSo18n6Ht6tO0kjD2ZVRwb52GlcLD6G/OPPHrk7RSH+Lb2FHppuCpUpiMHlFF6D/TCnckQT31UNy7bu4GiH7A0PahXFG96zgOSiUnR6IXVYG4KGuSuCkFJBHVlOuhlKK8MV9al+XXJyH9QlTPnF4NoOP2ByZh370HAvE3fQ72YIXg/hr/Kd5xYumEMfVLYnFqj6d6rsdL6ezq55958VtehUkazoLxuwOLw1UqbQ6qWGormH6BmERZ33ogJud8/lW+ASxEfFK+v8+IS84kKMP3iDy5GYZhGIZhGIZhGIZhGIYh5C9bGCtLyG6NgAAAAABJRU5ErkJggg=="
+            width="80" height="60" alt="Success"> ITEM ADDED TO CART
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="redirectToAnotherPage()">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#review" onclick=scrollToTarget()>Reviews </a>
+              </li>
+            <li class="nav-item">   
+              <a class="nav-link"  onclick="Sunglasses()">Sunglasses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  onclick="viewcart()">View cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://sanchitbajaj.dayschedule.com">Book an appointment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/book">Chat</a>
+              </li>
+          </ul>
+        </div>
+    </nav>  
+
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" >
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+            <div class="carousel-inner carousel-container">
+              <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="1.jpg" alt="First slide">
+            </div>
+                <div class="carousel-item">
+
+                    <img class="d-block w-100 img-fluid" src="https://img.freepik.com/free-photo/stunning-sensual-woman-portrait-wearing-silver-sunglasses_291049-1416.jpg"
+                     alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid" src="2.jpg" alt="Third slide">
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100 img-fluid" src="4.jpg" alt="Fourth slide">
+                </div>
+            </div>
+        </div>
+ 
+
+        <div class="container mt-4 optical-delights">
+          <h2 class="text-center mb-4 optical-delights-heading">Trendy Optical Delights</h2>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="product-card">
+                      <img src="https://m.media-amazon.com/images/I/31vR9e5S9bL.jpg" alt="Product 1">
+                      <div class="text-center p-3">
+                          <button class="btn btn-primary btn-block addToCartBtn">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="product-card">
+                      <img src="https://uniquekraft.com/cdn/shop/files/20231114-232805_0003_840x.png?v=1703168203" alt="Product 2">
+                      <div class="text-center p-3">
+                          <button  class="btn btn-primary btn-block addToCartBtn">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="product-card">
+                      <img src="https://www.colosseinglasses.com/cdn/shop/products/product-image-524594496_540x.jpg?v=1643187318" alt="Product 3">
+                      <div class="text-center p-3">
+                          <button  class="btn btn-primary btn-block addToCartBtn">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="product-card">
+                      <img src="https://www.colosseinglasses.com/cdn/shop/products/colossein_sunglasses_7_540x.jpg?v=1644393492" alt="Product 4">
+                      <div class="text-center p-3">
+                          <button  class="btn btn-primary btn-block addToCartBtn">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="review" class="container mt-4 reviews">
+        <h2 class="text-center mb-4 reviews-heading">Customer Reviews</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="user-image text-center"> <!-- Added text-center class here -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhtFJc9v3hEBfhJiOhYMS_60ieEbiOjPJyxl8F2dIBw&s" alt="User 1" class="rounded-circle">
+                    </div>
+                    <h4 class="text-center">Priya Sharma</h4>
+                    <p class="text-center">I recently purchased a pair of blue light glasses from Misha Eye Care, and I couldn't be happier! The website was easy to navigate, and I found exactly what I was looking for. The glasses arrived promptly and were of excellent quality. I highly recommend Misha Eye Care for all your optical needs!</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="user-image text-center"> <!-- Added text-center class here -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhtFJc9v3hEBfhJiOhYMS_60ieEbiOjPJyxl8F2dIBw&s" alt="User 2" class="rounded-circle">
+                    </div>
+                    <h4 class="text-center">Riya</h4>
+                    <p class="text-center">
+                        I've been a loyal customer of Misha Eye Care for years now, and they never disappoint! Their range of eyewear is extensive, and the prices are unbeatable. I recently bought a pair of sunglasses for my wife, and she absolutely loves them. The customer service is also top-notch. Keep up the great work!</p>                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="user-image text-center"> <!-- Added text-center class here -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhtFJc9v3hEBfhJiOhYMS_60ieEbiOjPJyxl8F2dIBw&s" alt="User 3" class="rounded-circle">
+                    </div>
+                    <h4 class="text-center">Rahul</h4>
+                    <p class="text-center">
+                        I stumbled upon Misha Eye Care while searching for a new pair of prescription glasses online, and I'm so glad I did! Not only did they have a wide variety of frames to choose from, but their virtual try-on feature made it easy for me to find the perfect fit </p>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-4 faq">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Can I return or exchange my glasses if they don't fit or if I don't like them?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Yes, we have a hassle-free return and exchange policy. Please refer to our Returns & Exchanges page for more information.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How long does it take to receive my order?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Our standard shipping usually takes 3-5 business days. However, we also offer expedited shipping options for faster delivery.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do you offer prescription lenses?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Yes, we offer a wide range of prescription lenses to suit your vision needs. You can select your prescription options during the checkout process.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    
+                    <p>Copyright © 2024 Misha eye care. All rights reserved.</p>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    
+                    <p>
+                        <a href="https://github.com/sanchitbajaj123" target="_blank"><i class='bx bxl-github' style='font-size: 2em;' ></i></a>
+                        <a href="https://www.instagram.com/sanchit_.bajaj" target="_blank"><i class='bx bxl-instagram-alt' style='font-size: 2em;'></i></a>
+                        <a href="https://www.youtube.com/channel/UCihD5L--fRw22jqQsFrrhkA" target="_blank"><i class='bx bxl-youtube' style='font-size: 2em;' ></i></a>
+                        <a href="https://www.linkedin.com/in/sanchit-bajaj-977908283/" target="_blank"><i class='bx bxl-linkedin-square' style='font-size: 2em;' ></i></a>
+                        <a href="https://g.page/r/CbYqDGBaafzqEB0/review" target="_blank" class="review-btn"><i class="bx bx-message-square-add" style="font-size: 2em;"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
