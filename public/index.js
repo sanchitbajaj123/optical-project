@@ -37,4 +37,7 @@ function viewcart(){
 function Sunglasses(){
   window.location.href='sunglasses.html';
 }
+function Login(){
+  window.location.href='log in.html'
+}
 
